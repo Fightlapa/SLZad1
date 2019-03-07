@@ -11,22 +11,21 @@ def generate_test_data():
         extreme_value = 0xfffffffff
         fout.write(f"{EXTREME_VALUE},{oct(EXTREME_VALUE)}")
 
-
 def measure(func):
     empty_loop_start = time.clock()
     for i in range (-SIZE, SIZE):
         this_is_to_avoid_negative_time = \
         "Probably because of the instruction pipelining while performing both loops it occurs, that empty one executes slower."
-    empty_loop_end = time.clock()
-    print("Empty loop time:" + str(empty_loop_end - empty_loop_start))
-    loop_start = time.clock()
+    mid_time = time.clock()
+
     for i in range (-SIZE, SIZE):
         this_is_to_avoid_negative_time = \
         "Probably because of the instruction pipelining while performing both loops it occurs, that empty one executes slower."
         value = func(i)
     loop_end = time.clock()
-    print("Full time:" + str(loop_end - loop_start))
-    return (loop_end - loop_start) - (empty_loop_end - empty_loop_start)
+    print("Empty loop time:" + str(mid_time - empty_loop_start))
+    print("Full time:" + str(loop_end - mid_time))
+    return (loop_end - mid_time) - (mid_time - empty_loop_start)
 
 def my_oct(value: int):
     oct_value = ""
