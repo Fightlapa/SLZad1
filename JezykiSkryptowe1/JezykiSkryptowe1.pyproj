@@ -24,6 +24,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="JezykiSkryptowe1.py" />
+    <Compile Include="myocttests.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.6" />

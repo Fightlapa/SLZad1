@@ -1,3 +1,3 @@
 ﻿  JezykiSkryptowe1C.cpp
-LINK : warning LNK4076: invalid incremental status file 'C:\Users\jakubjab\source\repos\JezykiSkryptowe1\Debug\JezykiSkryptowe1C.ilk' (which will be deleted); linking nonincrementally
+c:\users\jakubjab\source\repos\jezykiskryptowe1\jezykiskryptowe1c\jezykiskryptowe1c.cpp(78): warning C4018: '<': signed/unsigned mismatch
   JezykiSkryptowe1C.vcxproj -> C:\Users\jakubjab\source\repos\JezykiSkryptowe1\Debug\JezykiSkryptowe1C.exe
